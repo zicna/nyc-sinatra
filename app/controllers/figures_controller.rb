@@ -5,4 +5,8 @@ class FiguresController < ApplicationController
     
     erb :"application/new"
   end
+  post '/figures' do
+    #binding.pry
+    @figure = Figure.create(params[:figure])
+  end
 end
