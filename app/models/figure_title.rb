@@ -1,4 +1,5 @@
 class FigureTitle < ActiveRecord::Base
   # add relationships here
-  has_many :figure, through: :landmark
+  belongs_to :figure
+  belongs_to :title
 end
